@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Matchbox Museum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>The Matchbox Museum</h1>
+        <p>Tiny Art, Big History</p>
+
+        <nav>
+            <a href="#foundation">Foundation</a>
+            <a href="#colors">Colors</a>
+            <a href="#typography">Typography</a>
+            <a href="#buttons">Buttons</a>
+            <a href="#collection">Collection</a>
+            <a href="#forms">Forms</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- SECTION 1: FOUNDATION -->
+        <section id="foundation">
+            <h2>01. Foundation</h2>
+
+            <p>
+                The Matchbox Museum is a digital collection
+                inspired by vintage matchbox labels. The design
+                uses warm colors, simple layouts, and classic
+                typography to create a nostalgic feeling.
+            </p>
+
+            <h3>CSS Reset</h3>
+
+            <p>
+                A selective CSS reset removes the default body
+                margin so the header fills the page. Border-box
+                sizing makes padding and borders easier to manage.
+                Images are also kept within their containers.
+                Default list styles and keyboard focus indicators
+                are preserved.
+            </p>
+        </section>
+
+
+        <!-- SECTION 2: COLORS AND TOKENS -->
+        <section id="colors">
+            <h2>02. Colors & Design Tokens</h2>
+
+            <p>
+                These colors were chosen to reflect the bold
+                printing styles of vintage matchbox packaging.
+            </p>
+
+            <div class="color-grid">
+
+                <div class="color-card">
+                    <div class="color-box red"></div>
+                    <h3>Vintage Red</h3>
+                    <p>#B64032</p>
+                    <small>--color-red · Brand</small>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-box mustard"></div>
+                    <h3>Mustard</h3>
+                    <p>#D4A342</p>
+                    <small>--color-mustard · Accent</small>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-box teal"></div>
+                    <h3>Teal</h3>
+                    <p>#397D78</p>
+                    <small>--color-teal · Accent</small>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-box cream"></div>
+                    <h3>Cream</h3>
+                    <p>#F5EBD5</p>
+                    <small>--color-background · Page</small>
+                </div>
+            </div>
+
+            <h3>Other Design Tokens</h3>
+
+            <ul>
+                <li>Spacing: 8px, 16px, and 24px for gaps and padding.</li>
+                <li>Content width: 900px to keep sections readable.</li>
+                <li>Border radius: 6px for cards and buttons.</li>
+                <li>Shadow: A small shadow adds depth to cards.</li>
+                <li>Typography: Georgia for headings and Arial for body text.</li>
+            </ul>
+        </section>
+
+
+        <!-- SECTION 3: TYPOGRAPHY -->
+        <section id="typography">
+            <h2>03. Typography</h2>
+
+            <p>
+                The museum uses Georgia for headings because
+                it has a classic, vintage appearance. Arial
+                is used for body text because it is easy to read.
+            </p>
+
+            <h1 class="type-example">Vintage Matchbox Art</h1>
+
+            <h2>History in Miniature</h2>
+
+            <h3>Illustrations and Advertising</h3>
+
+            <p>
+                Matchbox labels were often decorated with
+                animals, flowers, advertisements, and colorful
+                patterns. These tiny illustrations are an
+                interesting part of graphic design history.
+            </p>
+
+            <ul>
+                <li>Decorative illustrations</li>
+                <li>Bold typography</li>
+                <li>Colorful packaging</li>
+            </ul>
+
+            <p>
+                Learn more about our
+                <a href="#collection">matchbox collection</a>.
+            </p>
+
+            <small>
+                Small text example: Museum archive information.
+            </small>
+
+            <p>
+                Code example: <code>font-family: Georgia;</code>
+            </p>
+
+            <p class="note">
+                Font source: Georgia and Arial are system fonts.
+                Fallbacks are Times New Roman/serif and
+                Helvetica/sans-serif. No font files are distributed.
+                Font licensing depends on the user's operating system.
+                Regular and bold weights are used. Font sizes adjust
+                for smaller screens, and paragraphs have a maximum
+                reading width.
+            </p>
+        </section>
+
+
+        <!-- SECTION 4: BUTTONS -->
+        <section id="buttons">
+            <h2>04. Buttons & Links</h2>
+
+            <p>
+                Buttons use the museum's vintage color palette.
+                Hover, focus, active, and disabled states help
+                visitors understand how elements work.
+            </p>
+
+            <div class="button-group">
+                <a href="#collection" class="button primary">
+                    Explore Collection
+                </a>
+
+                <a href="#forms" class="button secondary">
+                    Search Archive
+                </a>
+
+                <a href="#typography">Read More</a>
+
+                <button disabled>Unavailable</button>
+            </div>
+        </section>
+
+
+        <!-- SECTION 5: COLLECTION CARDS -->
+        <section id="collection">
+            <h2>05. From the Collection</h2>
+
+            <p>
+                These cards show how matchbox labels could
+                be displayed on the museum website.
+            </p>
+
+            <div class="collection-grid">
+
+                <article class="matchbox-card">
+                    <div class="matchbox-art flower">
+                        <p>THE MATCHBOX MUSEUM</p>
+                        <span aria-hidden="true">✿</span>
+                        <p>BOTANICAL SERIES</p>
+                    </div>
+
+                    <h3>Garden Bloom</h3>
+
+                    <p>
+                        A floral matchbox design inspired by
+                        vintage botanical illustrations.
+                    </p>
+                </article>
+
+                <article class="matchbox-card">
+                    <div class="matchbox-art star">
+                        <p>THE MATCHBOX MUSEUM</p>
+                        <span aria-hidden="true">★</span>
+                        <p>CELESTIAL SERIES</p>
+                    </div>
+
+                    <h3>Lucky Star</h3>
+
+                    <p>
+                        A geometric matchbox design using
+                        teal and mustard colors.
+                    </p>
+                </article>
+            </div>
+
+            <div class="notice">
+                <strong>Curator's Note:</strong>
+                These are sample illustrations created for
+                the design system, not historical artifacts.
+            </div>
+
+            <div class="image-placeholder">
+                Future Matchbox Photograph
+            </div>
+        </section>
+
+
+        <!-- SECTION 6: FORM CONTROLS -->
+        <section id="forms">
+            <h2>06. Search the Archive</h2>
+
+            <p>
+                These form elements demonstrate how visitors
+                could search and filter the museum collection.
+            </p>
+
+            <form action="#forms" method="get">
+
+                <label for="search">Search for a Matchbox</label>
+                <input
+                    type="text"
+                    id="search"
+                    name="search"
+                    placeholder="Search designs..."
+                >
+
+                <label for="category">Choose a Category</label>
+                <select id="category" name="category">
+                    <option value="all">All Categories</option>
+                    <option value="animals">Animals</option>
+                    <option value="flowers">Flowers</option>
+                    <option value="advertising">Advertising</option>
+                </select>
+
+                <fieldset>
+                    <legend>Display Style</legend>
+
+                    <label>
+                        <input type="radio" name="view" value="grid" checked>
+                        Grid View
+                    </label>
+
+                    <label>
+                        <input type="radio" name="view" value="list">
+                        List View
+                    </label>
+                </fieldset>
+
+                <label>
+                    <input type="checkbox" name="featured">
+                    Featured Matchboxes Only
+                </label>
+
+                <button type="submit" class="button primary">
+                    Search Collection
+                </button>
+
+            </form>
+
+            <p class="note">
+                This form demonstrates control styling.
+                It does not connect to a collection database.
+            </p>
+        </section>
+
+
+        <!-- ALTERNATE THEME -->
+        <section class="dark-theme">
+            <h2>Alternate Theme: Night at the Museum</h2>
+
+            <p>
+                This darker theme uses teal backgrounds
+                and mustard accents. The same component
+                styles work with a different set of colors.
+            </p>
+
+            <div class="matchbox-card">
+                <h3>Night Collection</h3>
+                <p>A sample card in the alternate theme.</p>
+                <a href="#collection">View Collection</a>
+            </div>
+
+            <div class="notice">
+                <strong>Museum Notice:</strong>
+                A sample notice in the dark theme.
+            </div>
+
+            <a href="#collection" class="button primary">
+                Explore Collection
+            </a>
+
+            <div class="dark-form">
+                <label for="dark-search">Search the Night Archive</label>
+                <input type="text" id="dark-search" placeholder="Search...">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>The Matchbox Museum | Design System Specimen 2026</p>
+        <p>Designed by Bailey Wheatman</p>
+    </footer>
+
+</body>
+</html>
+

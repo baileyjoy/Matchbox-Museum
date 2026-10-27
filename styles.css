@@ -1,0 +1,480 @@
+/* CSS by Bailey Wheatman */
+/* The Matchbox Museum Design System */
+
+
+/* SELECTIVE RESET */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+
+/* DESIGN TOKENS */
+
+:root {
+    /* Brand Colors */
+    --color-red: #B64032;
+    --color-mustard: #D4A342;
+    --color-teal: #397D78;
+    --color-cream: #F5EBD5;
+    --color-ink: #292521;
+
+    /* Semantic Colors */
+    --color-background: var(--color-cream);
+    --color-surface: #FFFDF7;
+    --color-text: var(--color-ink);
+    --color-heading: #8F3027;
+    --color-border: #9A8975;
+    --color-action: #8F3027;
+    --color-button-text: white;
+    --color-focus: #185F9C;
+    --color-notice: #F0E3CB;
+
+    /* Spacing */
+    --space-small: 8px;
+    --space-medium: 16px;
+    --space-large: 24px;
+
+    /* Sizing */
+    --content-width: 900px;
+    --reading-width: 65ch;
+
+    /* Borders and Shadow */
+    --radius: 6px;
+    --shadow: 0 3px 8px rgb(0 0 0 / 12%);
+
+    /* Typography */
+    --font-heading: Georgia, "Times New Roman", serif;
+    --font-body: Arial, Helvetica, sans-serif;
+    --font-size-small: 14px;
+    --font-size-body: 16px;
+    --font-size-large: 32px;
+}
+
+
+/* GLOBAL STYLES */
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+}
+
+h2,
+h3 {
+    color: var(--color-heading);
+}
+
+a {
+    color: var(--color-heading);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 3px;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: var(--color-red);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 8px solid var(--color-mustard);
+}
+
+header h1 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+header p {
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-medium);
+    margin-top: var(--space-large);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* MAIN CONTENT */
+
+main {
+    max-width: var(--content-width);
+    margin: auto;
+    padding: var(--space-large);
+}
+
+.intro {
+    text-align: center;
+    font-size: 18px;
+    max-width: var(--reading-width);
+    margin: 20px auto 40px;
+}
+
+section {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: var(--space-large);
+    margin-bottom: var(--space-large);
+    box-shadow: var(--shadow);
+}
+
+section p {
+    max-width: var(--reading-width);
+}
+
+.section-number {
+    font-size: var(--font-size-small);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.note {
+    font-size: var(--font-size-small);
+}
+
+
+/* COLOR PALETTE */
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-medium);
+}
+
+.color-card {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: var(--space-small);
+}
+
+.color-card h3 {
+    margin-bottom: 0;
+}
+
+.color-card p {
+    margin: 0;
+}
+
+.color-box {
+    height: 90px;
+    border-radius: var(--radius);
+}
+
+.red {
+    background-color: var(--color-red);
+}
+
+.mustard {
+    background-color: var(--color-mustard);
+}
+
+.teal {
+    background-color: var(--color-teal);
+}
+
+.cream {
+    background-color: var(--color-cream);
+}
+
+
+/* TOKEN TABLE */
+
+.table-scroll {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-small);
+    text-align: left;
+}
+
+
+/* TYPOGRAPHY */
+
+.type-example {
+    font-size: var(--font-size-large);
+}
+
+.reading {
+    max-width: var(--reading-width);
+}
+
+.metadata,
+small {
+    font-size: var(--font-size-small);
+}
+
+code {
+    overflow-wrap: anywhere;
+}
+
+
+/* BUTTONS */
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-medium);
+}
+
+.button,
+button {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 2px solid var(--color-action);
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.primary {
+    background-color: var(--color-action);
+    color: var(--color-button-text);
+}
+
+.secondary {
+    background-color: transparent;
+    color: var(--color-heading);
+}
+
+.button:hover,
+button:not(:disabled):hover {
+    filter: brightness(0.85);
+}
+
+.button:active,
+button:not(:disabled):active {
+    transform: translateY(2px);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+/* COLLECTION CARDS */
+
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-medium);
+}
+
+.matchbox-card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: var(--space-medium);
+    box-shadow: var(--shadow);
+}
+
+.matchbox-art {
+    height: 220px;
+    border: 8px double var(--color-mustard);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: var(--space-small);
+    color: white;
+}
+
+.matchbox-art p {
+    font-family: var(--font-heading);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.matchbox-art span {
+    font-size: 80px;
+    line-height: 1;
+}
+
+.flower {
+    background-color: var(--color-red);
+}
+
+.star {
+    background-color: var(--color-teal);
+}
+
+.notice {
+    background-color: var(--color-notice);
+    border-left: 5px solid var(--color-action);
+    padding: var(--space-medium);
+    margin-top: var(--space-large);
+}
+
+.image-placeholder {
+    background-color: var(--color-notice);
+    border: 2px dashed var(--color-border);
+    padding: 60px 20px;
+    margin-top: var(--space-large);
+    text-align: center;
+}
+
+
+/* FORM CONTROLS */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-small);
+    max-width: 450px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius);
+    background-color: var(--color-surface);
+    color: var(--color-text);
+}
+
+fieldset {
+    border: 1px solid var(--color-border);
+}
+
+fieldset label {
+    display: block;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: var(--color-action);
+}
+
+form button {
+    align-self: flex-start;
+}
+
+
+/* ALTERNATE DARK THEME */
+
+.dark-theme {
+    --color-background: #182D2C;
+    --color-surface: #263D3B;
+    --color-text: #FFF3DE;
+    --color-heading: #F4D58B;
+    --color-border: #A9C4BA;
+    --color-action: #F4D58B;
+    --color-button-text: #182D2C;
+    --color-focus: #9DD9FF;
+    --color-notice: #314B48;
+
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+.dark-theme .matchbox-card {
+    margin-bottom: var(--space-medium);
+}
+
+.dark-form {
+    margin-top: var(--space-large);
+}
+
+.dark-form label {
+    display: block;
+    margin-bottom: var(--space-small);
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: var(--color-ink);
+    color: var(--color-cream);
+    text-align: center;
+    padding: var(--space-large);
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    main {
+        padding: var(--space-medium);
+    }
+
+    section {
+        padding: var(--space-medium);
+    }
+
+    .color-grid,
+    .collection-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .matchbox-art {
+        height: 200px;
+    }
+
+    .type-example {
+        font-size: 26px;
+    }
+}
