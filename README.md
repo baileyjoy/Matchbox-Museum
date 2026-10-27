@@ -5,8 +5,8 @@ Matchbox museum is a small website inspired by vintage matchbox designs and pack
 This website uses a vintage inspired color pallette with reds, yellows, and teal to give it a retro look.
 
 ---Project Links---
-GitHub Repository: 
-Published Website:
+GitHub Repository: https://github.com/baileyjoy/Matchbox-Museum
+Published Website: https://baileyjoy.github.io/Matchbox-Museum/
 
 ---Testing Evidence---
 I tested my website using a browser to check the layout, styling, and functionality
